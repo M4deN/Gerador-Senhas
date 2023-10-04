@@ -12,11 +12,6 @@ body{
     margin-left: 34%;
 }
 
-.dark-mode.mainMenu {
-    background: linear-gradient(184deg, rgba(255, 255, 255, 0.46) 0%, rgba(140, 141, 141, 0) 48%);
-  }
-
-
 h4{
     text-align: center;
     font-size:medium;
@@ -24,8 +19,8 @@ h4{
 #generatedPassword{
     border:1px solid darkblue;
     height: 20px;
-    width:45%;
-    display:inline-block;    
+    width:43%;
+    display:inline-block;  
 }
 
 p label{
@@ -40,8 +35,7 @@ h2{
     text-align: center;
 }
 
-button{
-    
+button{    
     border: 2px solid darkblue;
     border-radius: 5px; 
     width:100px;
@@ -59,6 +53,7 @@ footer{
     padding: 5px;
     text-align: center;
   }
+  
   footer p, a{
     margin-top: auto;
     margin-left: 0.2em;
@@ -77,27 +72,28 @@ footer{
     z-index: 1000;
     color: #ffffff;
 }
-  
-  body.dark-mode .fa-sun.dark-mode-toggle {
+
+.fa-sun.dark-mode-toggle {
     font-size: 25px;
     color: rgb(0, 0, 0);
-  }
+}
 
-  .fa-moon.dark-mode-toggle {
+.fa-moon.dark-mode-toggle {
     font-size: 25px;
     color: #ffffff;
-  }
+}
 
-  .dark-mode {
+.dark-mode {
     background-color: #ffffff;
     color: #000000;
-  }
+}
+
  
   body.dark-mode footer {
-    color: #000000; /* Cor do texto no modo escuro */
-    border-top-color: #000000; /* Cor da borda no modo escuro */
+    color: #000000;
+    border-top-color: #000000; 
   }
   
   body.dark-mode footer p, body.dark-mode .footer a {
-    color: #000000; /* Cor do texto no modo escuro */
+    color: #000000; 
   }

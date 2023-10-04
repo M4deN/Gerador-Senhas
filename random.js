@@ -1,9 +1,10 @@
 const button1 = document.getElementById("generatePassword");
-const displayer = document.getElementById("generatedPassword");
+const input = document.getElementById("generatedPassword");
+
 button1.addEventListener("click", function (){
     let passLength = (document.getElementById("charNumber").value);
     let passArray = [];
-    for(let i = 0;i<passLength;i++){
+    for(let i = 0; i < passLength; i++){
         while(true)
         {
             var randomchar = Math.floor(Math.random()*(127-33))+33;
@@ -28,12 +29,13 @@ button1.addEventListener("click", function (){
                 break;
             }
         }
-        if (randomchar===60)
+        if (randomchar === 60)
         {
             passArray.push("&lt;");
         } else {
             passArray.push(String.fromCharCode(randomchar));
         }
     }
-    displayer.innerHTML = passArray.join("");
-})
+    // Alteração aqui: em vez de 'displayer', use 'input'
+    input.value = passArray.join("");
+});

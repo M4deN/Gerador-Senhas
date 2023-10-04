@@ -11,6 +11,12 @@ body{
     padding: 30px;
     margin-left: 34%;
 }
+
+.dark-mode.mainMenu {
+    background: linear-gradient(184deg, rgba(255, 255, 255, 0.46) 0%, rgba(140, 141, 141, 0) 48%);
+  }
+
+
 h4{
     text-align: center;
     font-size:medium;
@@ -18,10 +24,10 @@ h4{
 #generatedPassword{
     border:1px solid darkblue;
     height: 20px;
-    width:230px;
-    display:inline-block;
-    
+    width:45%;
+    display:inline-block;    
 }
+
 p label{
     float: left;
 }
@@ -61,3 +67,37 @@ footer{
     text-decoration: none;
   }
   
+  .dark-mode-toggle {
+    position: fixed;
+    top: 45px;
+    right: 0%;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #ffffff;
+}
+  
+  body.dark-mode .fa-sun.dark-mode-toggle {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+
+  .fa-moon.dark-mode-toggle {
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  .dark-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+ 
+  body.dark-mode footer {
+    color: #000000; /* Cor do texto no modo escuro */
+    border-top-color: #000000; /* Cor da borda no modo escuro */
+  }
+  
+  body.dark-mode footer p, body.dark-mode .footer a {
+    color: #000000; /* Cor do texto no modo escuro */
+  }

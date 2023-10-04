@@ -1,0 +1,63 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(0, 0, 0);
+    color:rgb(248, 245, 245);  
+}
+#mainMenu{
+    width: 30%;
+    border: 3px solid darkblue;
+    border-radius: 10px; 
+    background: linear-gradient(184deg, rgba(255, 255, 255, 0.46) 0%, rgba(0,212,255,0) 48%); 
+    padding: 30px;
+    margin-left: 34%;
+}
+h4{
+    text-align: center;
+    font-size:medium;
+}
+#generatedPassword{
+    border:1px solid darkblue;
+    height: 20px;
+    width:230px;
+    display:inline-block;
+    
+}
+p label{
+    float: left;
+}
+#buttonContainer{
+    margin: 30px;
+    text-align: center;
+}
+h2{
+    margin-top: 7%;
+    text-align: center;
+}
+
+button{
+    
+    border: 2px solid darkblue;
+    border-radius: 5px; 
+    width:100px;
+    height:30px;
+   
+}
+
+footer{
+    clear: both;
+    border-top: 1px solid #c7c6c6; 
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  footer p, a{
+    margin-top: auto;
+    margin-left: 0.2em;
+    color: var(--white);
+    align-items: center;
+    text-decoration: none;
+  }
+  

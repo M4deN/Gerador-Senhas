@@ -3,58 +3,11 @@
     <head>
         <title>Gerador Senha Fortes</title>
         <meta charset="UTF-8">
-        
+        <link href="style.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="icon" href="Star-icon.png">
     </head>
     <body>
-        <style>
-            html, body{
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                background-color:rgb(0, 0, 0);
-            }
-            body{
-                margin: 0 auto;
-                color:rgb(248, 245, 245);
-                width:500px;
-            }
-            #mainMenu{
-                border: 3px solid darkblue;
-                border-radius: 10px; 
-                background: linear-gradient(184deg, rgba(255, 255, 255, 0.46) 0%, rgba(0,212,255,0) 48%); 
-                padding: 30px;
-            }
-            h4{
-                text-align: center;
-                font-size:medium;
-            }
-            #generatedPassword{
-                border:1px solid darkblue;
-                height: 20px;
-                width:230px;
-                display:inline-block;
-                
-            }
-            p label{
-                float: left;
-            }
-            #buttonContainer{
-                margin: 30px;
-                text-align: center;
-            }
-            h2{
-                text-align: center;
-            }
-    
-            button{
-                
-                border: 2px solid darkblue;
-                border-radius: 5px; 
-                width:100px;
-                height:30px;
-               
-            }
-
-        
-        </style>
         <h2>Gerador De Senhas Fortes</h2>
         <div id="mainMenu">
             <h4>Opções</h4>
@@ -73,48 +26,15 @@
                 <div id="generatedPassword"></div>
             </p>
         </div>
-    
-        <script>
-            const button1 = document.getElementById("generatePassword");
-            const displayer = document.getElementById("generatedPassword");
-            button1.addEventListener("click", function (){
-                let passLength = (document.getElementById("charNumber").value);
-                let passArray = [];
-                for(let i = 0;i<passLength;i++){
-                    while(true)
-                    {
-                        var randomchar = Math.floor(Math.random()*(127-33))+33;
-                        if (randomchar > 96 && randomchar < 123){
-                            break;
-                        } else if (document.getElementById("includeCaps").checked 
-                        && (randomchar > 64 && randomchar < 91)
-                        ){
-                            break;
-                        } else if (document.getElementById("includeNumber").checked 
-                        && (randomchar > 47 && randomchar < 58)
-                        ){
-                            break;
-                        } else if (document.getElementById("includeSpecialChars").checked 
-                        && (
-                            (randomchar > 32 && randomchar < 48) 
-                            || (randomchar > 57 && randomchar < 65) 
-                            || (randomchar > 90 && randomchar < 97) 
-                            || (randomchar > 122)
-                            )
-                            ){
-                            break;
-                        }
-                    }
-                    if (randomchar===60)
-                    {
-                        passArray.push("&lt;");
-                    } else {
-                        passArray.push(String.fromCharCode(randomchar));
-                    }
-                }
-                displayer.innerHTML = passArray.join("");
-            })
-
-        </script>
+        <script src="random.js"></script>
+           <footer>
+            Copyright &copy; 2020 Desenvolvido por
+            <a href="https://www.facebook.com/Madenxx/" target="_blank">Alécio L. Medeiros</a>.
+        
+            <a href="https://www.linkedin.com/in/madenx" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/M4deN" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/madenx/" target="_blank"><i class="fab fa-instagram"></i></a>        
+        </div>
+    </footer>
     </body>
 </html>

@@ -5,19 +5,28 @@ body{
 }
 #mainMenu{
     width: 30%;
-    border: 3px solid darkblue;
+    border: 3px solid #ffffff;
     border-radius: 10px; 
     background: linear-gradient(184deg, rgba(255, 255, 255, 0.46) 0%, rgba(0,212,255,0) 48%); 
     padding: 30px;
     margin-left: 34%;
 }
+body.dark-mode #mainMenu {
+    background: linear-gradient(184deg, rgba(97, 96, 96, 0.46) 0%, rgba(20, 20, 20, 0) 48%) !important;
+    background-color: #ffffff;
+    border: 3px solid rgb(6, 6, 8);
+}
+body.dark-mode {
+    background-color: #ffffff;
+}
+
 
 h4{
     text-align: center;
     font-size:medium;
 }
 #generatedPassword{
-    border:1px solid darkblue;
+    border:1px solid rgb(6, 6, 8);
     height: 20px;
     width:43%;
     display:inline-block;  
@@ -31,16 +40,26 @@ p label{
     text-align: center;
 }
 h2{
-    margin-top: 7%;
+    margin-top: 9%;
     text-align: center;
 }
 
 button{    
-    border: 2px solid darkblue;
+    border: 2px solid rgb(6, 6, 8);
     border-radius: 5px; 
     width:100px;
     height:30px;
    
+}
+
+.dark-mode button:hover {
+    background-color: rgb(6, 6, 8);
+    color: white;
+}
+
+button:hover{
+    background-color:rgb(153, 151, 151);
+    color:rgb(6, 6, 8);
 }
 
 footer{
@@ -75,16 +94,16 @@ footer{
 
 .fa-sun.dark-mode-toggle {
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .fa-moon.dark-mode-toggle {
     font-size: 25px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .dark-mode {
-    background-color: #ffffff;
+    background-color: #c5c4c4;
     color: #000000;
 }
 

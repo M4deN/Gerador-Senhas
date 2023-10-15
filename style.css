@@ -1,5 +1,5 @@
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color:rgb(0, 0, 0);
     color:rgb(248, 245, 245);  
 }
@@ -106,7 +106,6 @@ footer{
     background-color: #c5c4c4;
     color: #000000;
 }
-
  
   body.dark-mode footer {
     color: #000000;
